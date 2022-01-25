@@ -46,16 +46,54 @@
 			width: 9.8%;
 			height: 30.8%;
 			display: flex;
-			background-color: red;
+
 		}
 
 		.evt-letrero.evt-izq {
-			left: 19.8%;
-			width: 10.4%;
+			left: 20%;
+			width: 10.6%;
+			height:  27%;
 		}
 
 		.evt-letrero.evt-der {
 			right: 22.4%;
+			width: 13%;
+			height: 15%;
+			top: 16%;
+	
+		}
+		.evt-letrero.evt-red-social {
+			right: 20.8%;
+			width: 8.5%;
+			height: 6%;
+			top: 43.3%;
+		  	
+		}
+		.evt-letrero.evt-participa-gana {
+			right: 0.3%;
+			width: 15%;
+			height: 7%;
+			top: 42%;
+			
+		}
+		.evt-letrero.evt-foto-recuerdo {
+			right: 20%;
+			width: 9.4%;
+			height: 4.7%;
+			top: 69%;
+		}
+		.evt-letrero.evt-info-evento {
+			left: 2%;
+			width: 13%;
+			height:  25%;
+			top: 6%;
+
+		}
+		.evt-letrero.evt-contenido-adicional {
+			left: 2%;
+			width: 15%;
+			height: 37%;
+			top: 37%;
 		}
 
 		#evt-video {
@@ -68,6 +106,7 @@
 			height: 19.3%;
 			top: 13.5%;
 			left: 39%;
+	
 		}
 
 		/* POSCICIÓN CON RESPECTO AL evt-videoContainer */
@@ -122,24 +161,24 @@
 		}
 
 		.evt-central-pos {
-			width: 17.2%;
-			height: 16.4%;
-			top: 54%;
-			left: 41.8%;
+			width: 15%;
+			height: 7%;
+			top: 35%;
+			left: 41.2%;
 		}
 
 		.evt-left-pos {
 			width: 14.2%;
-			height: 13.4%;
-			top: 54.8%;
-			left: 20.4%;
+			height: 30.4%;
+			top: 64%;
+			left: 22.4%;
 		}
 
 		.evt-right-pos {
-			width: 14.1%;
-			height: 13.5%;
-			top: 54.8%;
-			right: 20.3%;
+			width: 11.1%;
+			height: 8.2%;
+			top: 70.8%;
+			right: 37.3%;
 		}
 
 		.evt-banner-img {
@@ -350,7 +389,7 @@
 		.inf-phone {
 			display: none;
 		}
-
+/*
 		@media (max-width: 767px) {
 			#evt-info_h {
 				display: none;
@@ -463,7 +502,7 @@
 			}
 		}
 
-		/* MEDIA QUERY PARA VERSIÓN MOBILE */
+		 MEDIA QUERY PARA VERSIÓN MOBILE 
 		@media (max-width: 576px) {
 
 			.inf-desktop {
@@ -527,7 +566,7 @@
 				left: 14%;
 				bottom: 9.6%;
 			}
-		}
+		}*/
 	</style>
 </head>
 
@@ -552,26 +591,34 @@
 
 			<!-- BANNER DE LA IZQUIERDA -->
 			<!-- ESTA IMÁGEN SE COMPORTA SEGÚN DIMENCIONES DE LA PANTALLA Y EL TIPO DE DISPOSITIVO-->
-			<a href="https://s3.amazonaws.com/eventtia/var/www/current-eventtia-code-base/public/ckeditor_assets/pictures/55050/content_1639088061.png" target="_blank" id="evt-banner_left" title="Banner uno"
-				class="evt-abs evt-letrero evt-izq">
-				<img src="./img/klorane-laboratoires-logo-png-transparent.png" alt="Banner Left" class="evt-banner-img">
-			</a>
-			<!-- BANNER DE LA DERECHA -->
-			<!-- ESTA IMÁGEN SE COMPORTA SEGÚN DIMENCIONES DE LA PANTALLA Y EL TIPO DE DISPOSITIVO -->
-			<a href="https://s3.amazonaws.com/eventtia/var/www/current-eventtia-code-base/public/ckeditor_assets/pictures/55051/content_1639088129.png" target="_blank" id="evt-banner_right" title="Banner dos" class="evt-abs evt-letrero evt-der">
-				<img src="./img/LOGO PF_QUADRI.png" alt="Banner Right" class="evt-banner-img">
+			<a href="https://www.rutadecampeones.com/es/rutadecampeones/stage/166116?module=Break%20Outs" target="_blank" id="evt-banner_left" title="Banner uno" class="evt-abs evt-letrero evt-izq">
 			</a>
 
-			<!-- VIDEO CENTRAL SE COMPORTA SEGÚN DIMENCIONES DE LA PANTALLA Y EL TIPO DE DISPOSITIVO -->
-			<div id="evt-video_central" class="evt-abs evt-video-central">
-				 <!--<video width="100%" height="100%" controls  muted>
-					<source src="./video/Video.mp4" type="video/mp4">
-				</video> -->
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/xNm5QzukYuM"
-					title="YouTube video player" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
-			</div>
+			<!-- BANNER DE LA DERECHA -->
+			<!-- ESTA IMÁGEN SE COMPORTA SEGÚN DIMENCIONES DE LA PANTALLA Y EL TIPO DE DISPOSITIVO -->
+			<a href="https://www.rutadecampeones.com/es/rutadecampeones/stage/166116?module=Workshops" target="_blank" id="evt-banner_right" title="Banner dos" class="evt-abs evt-letrero evt-der"></a>
+
+			<!--BANNER RED SOCIAL-->
+			<a href="https://www.rutadecampeones.com/es/rutadecampeones/stage/166116?module=SocialWall" target="_blank" id="evt-red_social" title= "Red Social" class="evt-abs evt-letrero evt-red-social"></a>
+
+			<!-- PARTICIPA Y GANA 	 -->
+			<a href="https://www.rutadecampeones.com/es/rutadecampeones/stage/166116?module=SocialWall" target="_blank" id="evt-participa_gana" title= "Red Social" class="evt-abs evt-letrero evt-participa-gana"></a>
+
+			<!-- POSTER CENTRAL -->
+			<a href="https://www.rutadecampeones.com/es/rutadecampeones/stage/166116?module=L%C3%ADderes%20de%20equipo" target="_blank" id="evt-video_central" title="Banner Central" class= "evt-abs evt-video-central">
+			</a>
+
+			<!-- FOTO DE RECUERDO  -->
+			<a href="https://www.rutadecampeones.com/es/rutadecampeones/stage/166116?module=Photobooth" target="_blank" id="evt-foto_recuerdo" title="Foto recuerdo" class= "evt-abs evt-letrero evt-foto-recuerdo">
+			</a>
+
+			<!-- INFO DEL EVENTO .evt-letrero.evt-info-evento-->
+			<a href="https://www.rutadecampeones.com/es/rutadecampeones/stage/166116?module=Informaci%C3%B3n%20del%20Evento" target="_blank" id="evt-info_evento" title="Info evento" class= "evt-abs evt-letrero evt-info-evento">
+			</a>
+
+			<!-- CONTENIDO ADICIONAL evt-contenido-adicional-->
+			<a href="https://www.rutadecampeones.com/es/rutadecampeones/stage/166116?module=Sponsors" target="_blank" id="evt-contenido_adicional" title="Contenido adicional" class= "evt-abs evt-letrero evt-contenido-adicional">
+			</a>
 
 			<!-- EL VÍNCULO PARA EL VS ES EL NOMBRE DEL MÓDULO LA QUE SE QUIERE RE DIRIGIR, ESTE VALOR 
 				 INICALMENTE SE TIENE QUE CONFIGURAR EN EL HTML -->
@@ -579,20 +626,19 @@
 			<!-- CHIKMENEA CENTRAL-->
 			<a id="evt-link_center" title="Visitar VIRTUAL STAGE"
 				href = "https://virtual-stage.eventtia.com/en/how-to-digitize-my-physical-events/stage/163834"target="_blank"
-				class="evt-abs evt-links evt-central-pos">
-				<span>MAIN STAGE</span>
+				class="evt-abs  evt-central-pos">
 			</a>
 			<!-- CHIMENEA IZQUIERDA -->
 			<a id="evt-link_left" title="Visitar SPEAKERS"
 				href = "https://virtual-stage.eventtia.com/en/how-to-digitize-my-physical-events/stage/163834?module=Speakers" target="_blank"
-				class="evt-abs evt-links evt-left-pos">
-				<span>SPEAKERS</span>
+				class="evt-abs  evt-left-pos">
+	
 			</a>
 			<!-- CHIMENEA DERECHA -->
 			<a id="evt-link_right" title="Visitar SPONSORS"
 				href = "https://virtual-stage.eventtia.com/en/how-to-digitize-my-physical-events/home?module=Xmas%20Game" target="_blank"
-				class="evt-abs evt-links evt-right-pos">
-				<span>XMAS GAME</span>
+				class="evt-abs evt-right-pos">
+
 		</a>
 
 			<!-- PROYECTOR DEL LA PARTE SUPERIOR-->
