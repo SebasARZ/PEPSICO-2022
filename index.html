@@ -53,6 +53,7 @@
 			left: 19%;
 			width: 12.2%;
 			height:  27%;
+			background-color: red;
 		}
 
 		.evt-letrero.evt-der {
@@ -389,7 +390,7 @@
 		.inf-phone {
 			display: none;
 		}
-/*
+
 		@media (max-width: 767px) {
 			#evt-info_h {
 				display: none;
@@ -452,25 +453,36 @@
 				width: 10.4%;
 			}
 
+			
 			.evt-central-pos {
-				width: 40.8%;
-				height: 16.6%;
-				top: 53.9%;
-				left: 51%;
+				width: 34.8%;
+				height: 7%;
+				top: 36%;
+				left: 49%;
+				
 			}
 
 			.evt-left-pos {
-				width: 33%;
-				height: 13.4%;
-				top: 54.8%;
-				left: .4%;
+				width: 38%;
+				height: 7%;
+				top: 87%;
+				left: 3%;
+				
 			}
+			.evt-right-pos {
+			width: 10.8%;
+			height: 7.8%;
+			top: 70.8%;
+			right: 37.8%;
+			background-color: royalblue;
+		}
 
 			.evt-video-central {
-				width: 40.9%;
-				height: 17.4%;
-				top: 27.4%;
-				left: 51.3%;
+				width: 47.4%;
+				height: 19%;
+				top: 14%;
+				left: 43.8%;
+			
 			}
 
 			.evt-left-sponsor {
@@ -493,16 +505,10 @@
 				left: 16%;
 				bottom: 8.3%;
 			}
-
-			.evt-letrero.izq {
-				left: 4.4%;
-				width: 25%;
-				height: 31%;
-				top: 11.2%;
-			}
+			
 		}
 
-		 MEDIA QUERY PARA VERSIÓN MOBILE 
+		/* MEDIA QUERY PARA VERSIÓN MOBILE */
 		@media (max-width: 576px) {
 
 			.inf-desktop {
@@ -566,7 +572,7 @@
 				left: 14%;
 				bottom: 9.6%;
 			}
-		}*/
+		}
 	</style>
 </head>
 
@@ -580,14 +586,13 @@
 
 			<!-- VIDEO ESCENARIO PRINCIPAL VERSION MOBILE
 			PERMITE FORMATOS MP4 , .WebM, .OVG, TAMBIÉN HIPERVINCULOS -->
-			<img src="img/background.png" title="Video principal" id="evt-video_cel" width="100%" height="auto">
+			<img src="img/background_mobile.png" title="Video principal" id="evt-video_cel" width="100%" height="auto">
 			</img>
 
 			<!-- VIDEO ESCENARIO PRINCIPAL VERSION TABLET
-			PERMITE FORMATOS MP4 , .WebM, .OVG, TAMBIÉN HIPERVINCULOS  -->
-			<video loop autoplay="" title="Video principal" id="evt-video_tablet" width="100%" height="auto" muted="">
-				<source src="./video/background_tablet.mp4" type="video/mp4">
-			</video>
+			PERMITE FORMATOS MP4 , .WebM, .OVG, TAMBIÉN HIPERVINCULOS   -->
+			<img src="img/background_tablet.png" title="Video principal" id="evt-video_tablet" width="100%" height="auto">
+			</img>
 
 			<!-- BANNER DE LA IZQUIERDA -->
 			<!-- ESTA IMÁGEN SE COMPORTA SEGÚN DIMENCIONES DE LA PANTALLA Y EL TIPO DE DISPOSITIVO-->
